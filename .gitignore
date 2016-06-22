@@ -1,0 +1,8 @@
+main
+build-*-*/
+
+*.d
+*.o
+*.so
+*.so.*
+*.pro.user
