@@ -5,7 +5,10 @@ CONFIG -= qt
 QMAKE_CFLAGS_WARN_ON -= -W
 QMAKE_CFLAGS += -std=gnu99
 
-SOURCES += main.c
+HEADERS += ../lib/lib.h
+SOURCES += main.c ../lib/lib.c
+
+INCLUDEPATH += ../lib
 
 exists(main-local.pri) {
 	include(main-local.pri)

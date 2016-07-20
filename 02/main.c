@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 #include "main.h"
+#include "lib.h"
 
 int main()
 {
-	puts("Ahoj!");
+	print_string("Ahoj!");
 
 	return 0;
 }

@@ -1,9 +1,9 @@
 CC=gcc
-CFLAGS=-Wall -Og -ggdb2 -MMD
+CFLAGS=-Wall -Og -ggdb2 -MMD -I../lib
 
 all: main
 
-main: main.o
+main: main.o ../lib/lib.o
 
 clean:
 	rm -f *.d *.o *.so *.so.* main $(AUX_BUILD)
