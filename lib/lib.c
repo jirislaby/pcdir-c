@@ -19,3 +19,4 @@ GEN_PRINT2(double, "%lf");
 GEN_PRINT3(longlong, long long, "%lld");
 GEN_PRINT3(character, char, "%c");
 GEN_PRINT3(string, const char *, "%s");
+GEN_PRINT3(pointer, const void *, "%p");

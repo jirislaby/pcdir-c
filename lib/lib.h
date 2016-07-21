@@ -10,6 +10,7 @@ void print_float(float n);
 void print_double(double n);
 
 void print_character(char n);
-void print_string(const char * n);
+void print_string(const char *n);
+void print_pointer(const void *n);
 
 #endif
