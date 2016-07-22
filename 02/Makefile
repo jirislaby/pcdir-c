@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -Og -ggdb2 -MMD -I../lib
+CFLAGS=-Wall -Og -ggdb2 -MMD -I../lib -std=gnu99
 
 all: main
 
