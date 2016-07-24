@@ -11,6 +11,12 @@ static char *read_input(size_t *size)
 
 static char *encode_base64(const char *input, size_t size)
 {
+	if (size % 3) {
+		size -= size % 3;
+		fprintf(stderr, "cannot do unaligned conversions, cropping to %zu\n",
+				size);
+	}
+
 	(void)b64_idx; // use this in a sane way later
 
 	return NULL;
